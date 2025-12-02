@@ -71,10 +71,11 @@ nav {
     background-color: #ffffff;
     width: 100%;
     left: 0;
-    padding: 0 1rem;
+    padding:  1rem;
     box-shadow: 0 2px 2px #3a3a3a;
     display: none;
     top: 100%;
+    z-index: 10;
     
 }
 header {
@@ -99,7 +100,7 @@ main {
     background-color: lightblue;
     /* make main element to take up any surplus space to take footer down*/
     flex: 1 0 auto;
-    margin-top: 47px;
+    margin-top: 50px;
     
 }
 
@@ -126,5 +127,22 @@ footer {
     }
     .nav-toggle-label {
         display: none;
+    }
+    #logo {
+        font-size: 280%;
+        line-height: 75px
+        margin: 0 0.5rem;
+    }
+    /* Main content */
+    main {
+        margin-top: 7px;
+    }
+}
+
+/* large devices (laptops and desktops 992px and up) */
+@media screen and (min-width: 992px) {
+    #menu a:hover {
+        border-bottom: 1px solid #3a3a3a;
+        
     }
 }
